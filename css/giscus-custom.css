@@ -3,12 +3,11 @@
  * https://github.com/primer/primitives/blob/main/LICENSE
  */
 body main{
-    --off: #000;
     --ac: #0033bb;
+    --acd: #cad5f1;
     --bg: #f9f9f9;
     --fg: #111;
-    --mid: #545454;
-    --fgd: #505050;
+    --fgb: #bebebe;
 
     --color-prettylights-syntax-comment:#6e7781;
     --color-prettylights-syntax-constant:#0550ae;
@@ -31,7 +30,7 @@ body main{
     --color-prettylights-syntax-markup-deleted-text:#82071e;
     --color-prettylights-syntax-markup-deleted-bg:#ffebe9;
     --color-prettylights-syntax-markup-inserted-text:#116329;
-    --color-prettylights-syntax-markup-inserted-bg:#dafbe1;
+    --color-prettylights-syntax-markup-inserted-bg:#27973f;
     --color-prettylights-syntax-markup-changed-text:#953800;
     --color-prettylights-syntax-markup-changed-bg:#ffd8b5;
     --color-prettylights-syntax-markup-ignored-text:#eaeef2;
@@ -40,7 +39,8 @@ body main{
     --color-prettylights-syntax-brackethighlighter-angle:#57606a;
     --color-prettylights-syntax-sublimelinter-gutter-mark:#8c959f;
     --color-prettylights-syntax-constant-other-reference-link:#0a3069;
-    --color-btn-text:#24292f;
+
+    --color-btn-text:var(--fg);
     --color-btn-bg:#f6f8fa;
     --color-btn-border:#1f232826;
     --color-btn-shadow:0 1px 0 #1f23280a;
@@ -51,35 +51,41 @@ body main{
     --color-btn-active-border:#1f232826;
     --color-btn-selected-bg:#eeeff2;
     --color-btn-primary-text:#fff;
-    --color-btn-primary-bg:var(--fg);
-    --color-btn-primary-border:var(--fg);
+    --color-btn-primary-bg:var(--ac);
+    --color-btn-primary-border:var(--ac);
     --color-btn-primary-shadow:0 1px 0 #0707071a;
     --color-btn-primary-inset-shadow:inset 0 1px 0 #ffffff08;
-    --color-btn-primary-hover-bg:var(--fgd);
-    --color-btn-primary-hover-border:var(--fgd);
-    --color-btn-primary-selected-bg:var(--fg);
+    --color-btn-primary-hover-bg:var(--acd);
+    --color-btn-primary-hover-border:var(--acd);
+    --color-btn-primary-selected-bg:var(--ac);
     --color-btn-primary-selected-shadow:none;
     --color-btn-primary-disabled-text:#fffc;
-    --color-btn-primary-disabled-bg:#94d3a2;
-    --color-btn-primary-disabled-border:#1f232826;
+    --color-btn-primary-disabled-bg:var(--acd);
+    --color-btn-primary-disabled-border:var(--acd);
     --color-action-list-item-default-hover-bg:#d0d7de52;
-    --color-segmented-control-bg:#e5e5e5;
-    --color-segmented-control-button-bg:#fff;
-    --color-segmented-control-button-selected-border:#8c959f;
+
+    --color-segmented-control-bg:var(--ac);
+    --color-segmented-control-button-bg:var(--bg);
+    --color-segmented-control-button-selected-border:(--fgb);
+
     --color-fg-default:#1f2328;
     --color-fg-muted:#656d76;
     --color-fg-subtle:#6e7781;
-    --color-canvas-default:#fff;
-    --color-canvas-overlay:#fff;
-    --color-canvas-inset:#f6f8fa;
-    --color-canvas-subtle:#f6f8fa;
-    --color-border-default:#d0d7de;
+
+    --color-canvas-default:transparent;
+    --color-canvas-overlay:transparent;
+    --color-canvas-inset:transparent;
+    --color-canvas-subtle:transparent;
+
+    --color-border-default:var(--fgb);
     --color-border-muted:#d8dee4;
     --color-neutral-muted:#afb8c133;
-    --color-accent-fg:var(--ac);
-    --color-accent-emphasis:var(--ac);
-    --color-accent-muted:var(--ac);
-    --color-accent-subtle:#ddf4ff;
+
+    --color-accent-fg:var(--fg);
+    --color-accent-emphasis:var(--fg);
+    --color-accent-muted:var(--fgb);
+
+    --color-accent-subtle:transparent;
     --color-success-fg:#1a7f37;
     --color-attention-fg:#9a6700;
     --color-attention-muted:#d4a72c66;
@@ -88,8 +94,8 @@ body main{
     --color-danger-muted:#ff818266;
     --color-danger-subtle:#ffebe9;
     --color-primer-shadow-inset:inset 0 1px 0 #d0d7de33;
-    --color-scale-gray-1:#eaeef2;
-    --color-scale-blue-1:#b6e3ff;
+    --color-scale-gray-1:var(--bg);
+    --color-scale-blue-1:var(--acd);
 
     /*! Extensions from @primer/css/alerts/flash.scss */
     --color-social-reaction-bg-hover:var(--color-scale-gray-1);
