@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>帖子 on AQUILA</title><link>https://aquilauwu.github.io/zh/post/</link><description>最新文章 发布于 帖子 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Wed, 18 Nov 2026 16:19:32 +0000</lastBuildDate><atom:link href="https://aquilauwu.github.io/zh/post/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://aquilauwu.github.io/zh/post/other/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://aquilauwu.github.io/zh/post/other/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>帖子 on AQUILA</title><link>https://aquilauwu.github.io/zh/post/</link><description>最新文章 发布于 帖子 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Wed, 18 Nov 2026 16:28:57 +0000</lastBuildDate><atom:link href="https://aquilauwu.github.io/zh/post/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://aquilauwu.github.io/zh/post/other/page-for-test/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://aquilauwu.github.io/zh/post/other/page-for-test/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
 &lt;h2 id="基本正文元素"&gt;基本正文元素&lt;/h2&gt;
 &lt;h3 id="基本字形--列表"&gt;基本字形 &amp;amp; 列表&lt;/h3&gt;
 &lt;p&gt;本节将使用有序列表、无序列表，介绍本站可用的基础文字样式。&lt;/p&gt;
@@ -44,14 +44,14 @@
  data-fig-label="天鹅拉花" id="天鹅拉花"
 &gt;
  &lt;a class="has-img"&gt;
- &lt;img src="https://aquilauwu.github.io/zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/latte-art.JPG"
+ &lt;img src="https://aquilauwu.github.io/zh/post/other/page-for-test/latte-art.JPG"
  alt="图片加载失败或鼠标悬停时会显示这行文字"
  title="图片加载失败或鼠标悬停时会显示这行文字"
- aria-describedby="fig-eb2345d3eae6c25f8226d3c1bf3c9729-1"
+ aria-describedby="fig-e9f179f11664df35ccb0ee9bdd7c3d78-1"
  loading="lazy"
  &gt;
  &lt;/a&gt;
- &lt;span id="the-fig-eb2345d3eae6c25f8226d3c1bf3c9729-1" class="marginpar abs"&gt;&amp;#8204;
+ &lt;span id="the-fig-e9f179f11664df35ccb0ee9bdd7c3d78-1" class="marginpar abs"&gt;&amp;#8204;
 
 &lt;strong class="fig-cap"&gt;图片标题 &lt;/strong&gt;
 图片注释，这是一杯拿铁。
@@ -63,12 +63,12 @@
 &lt;p&gt;点击图片即可查看大图。&lt;span data-fig-ref="天鹅拉花" data-fig-sub=""&gt;&lt;/span&gt;那杯咖啡是我自己拉花做的，不错吧！&lt;/p&gt;
 &lt;h3 id="边注小图"&gt;边注小图&lt;/h3&gt;
 
- &lt;span id="the-fig-eb2345d3eae6c25f8226d3c1bf3c9729-3" data-fig-label="冰拿铁" class="marginpar"&gt;
+ &lt;span id="the-fig-e9f179f11664df35ccb0ee9bdd7c3d78-3" data-fig-label="冰拿铁" class="marginpar"&gt;
  &lt;a class="has-img"&gt;
- &lt;img src="https://aquilauwu.github.io/zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/latte-ice.JPG"
+ &lt;img src="https://aquilauwu.github.io/zh/post/other/page-for-test/latte-ice.JPG"
  alt=" 冰拿铁" title="冰拿铁" 
  
- aria-describedby="fig-eb2345d3eae6c25f8226d3c1bf3c9729-3"
+ aria-describedby="fig-e9f179f11664df35ccb0ee9bdd7c3d78-3"
  loading="lazy"&gt;
  &lt;/a&gt;
  &lt;span&gt;&lt;/span&gt;
@@ -85,17 +85,17 @@
 &lt;p&gt;下方为通栏大图，若要展示信息量大、横向较长的图像，这绝对是首选方案。可以注意到：所有图片都会按章节自动编号，且支持引用跳转。以此验证图片引用功能正常：如 &lt;span data-fig-ref="高斯手稿" data-fig-sub=""&gt;&lt;/span&gt;，图注有时会嵌入链接，一般用于标注图像来源。&lt;/p&gt;
 &lt;figure class="fullwidth" data-fig-label="高斯手稿" id="高斯手稿"&gt;
  &lt;a class="has-img"&gt;
- &lt;img src="https://aquilauwu.github.io/zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/gauss.JPG"
+ &lt;img src="https://aquilauwu.github.io/zh/post/other/page-for-test/gauss.JPG"
  
  alt=" 高斯手稿"
  title="高斯手稿"
  
  
- aria-describedby="fig-eb2345d3eae6c25f8226d3c1bf3c9729-6"
+ aria-describedby="fig-e9f179f11664df35ccb0ee9bdd7c3d78-6"
  loading="lazy"
  &gt;
  &lt;/a&gt;
- &lt;figcaption id="fig-eb2345d3eae6c25f8226d3c1bf3c9729-6"&gt;&amp;#8204;
+ &lt;figcaption id="fig-e9f179f11664df35ccb0ee9bdd7c3d78-6"&gt;&amp;#8204;
 
 &lt;strong class="fig-cap"&gt;高斯手稿 &lt;/strong&gt;
 卡尔・弗里德里希・高斯《数学日记》手稿第五页，1796‑1814，哥廷根大学馆藏，公有领域资源。
