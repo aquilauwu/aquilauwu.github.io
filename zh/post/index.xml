@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>帖子 on AQUILA</title><link>https://aquilauwu.github.io/zh/post/</link><description>最新文章 发布于 帖子 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Wed, 18 Nov 2026 15:59:18 +0000</lastBuildDate><atom:link href="https://aquilauwu.github.io/zh/post/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://aquilauwu.github.io/zh/post/other/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://aquilauwu.github.io/zh/post/other/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>帖子 on AQUILA</title><link>https://aquilauwu.github.io/zh/post/</link><description>最新文章 发布于 帖子 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Wed, 18 Nov 2026 16:03:41 +0000</lastBuildDate><atom:link href="https://aquilauwu.github.io/zh/post/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://aquilauwu.github.io/zh/post/other/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://aquilauwu.github.io/zh/post/other/%E6%B5%8B%E8%AF%95%E9%A1%B5%E9%9D%A2/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
 &lt;h2 id="基本正文元素"&gt;基本正文元素&lt;/h2&gt;
 &lt;h3 id="基本字形--列表"&gt;基本字形 &amp;amp; 列表&lt;/h3&gt;
 &lt;p&gt;本节将使用有序列表、无序列表，介绍本站可用的基础文字样式。&lt;/p&gt;
@@ -44,7 +44,7 @@
  data-fig-label="天鹅拉花" id="天鹅拉花"
 &gt;
  &lt;a class="has-img"&gt;
- &lt;img src="../../zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/%e5%a4%a9%e9%b9%85%e6%8b%89%e8%8a%b1.JPG"
+ &lt;img src="https://aquilauwu.github.io/zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/%e5%a4%a9%e9%b9%85%e6%8b%89%e8%8a%b1.JPG"
  alt="图片加载失败或鼠标悬停时会显示这行文字"
  title="图片加载失败或鼠标悬停时会显示这行文字"
  aria-describedby="fig-eb2345d3eae6c25f8226d3c1bf3c9729-1"
@@ -65,7 +65,7 @@
 
  &lt;span id="the-fig-eb2345d3eae6c25f8226d3c1bf3c9729-3" data-fig-label="冰拿铁" class="marginpar"&gt;
  &lt;a class="has-img"&gt;
- &lt;img src="../../zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/%e5%86%b0%e6%8b%bf%e9%93%81.JPG"
+ &lt;img src="https://aquilauwu.github.io/zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/%e5%86%b0%e6%8b%bf%e9%93%81.JPG"
  alt=" 冰拿铁" title="冰拿铁" 
  
  aria-describedby="fig-eb2345d3eae6c25f8226d3c1bf3c9729-3"
@@ -85,7 +85,7 @@
 &lt;p&gt;下方为通栏大图，若要展示信息量大、横向较长的图像，这绝对是首选方案。可以注意到：所有图片都会按章节自动编号，且支持引用跳转。以此验证图片引用功能正常：如 &lt;span data-fig-ref="高斯手稿" data-fig-sub=""&gt;&lt;/span&gt;，图注有时会嵌入链接，一般用于标注图像来源。&lt;/p&gt;
 &lt;figure class="fullwidth" data-fig-label="高斯手稿" id="高斯手稿"&gt;
  &lt;a class="has-img"&gt;
- &lt;img src="../../zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/%e9%ab%98%e6%96%af%e6%89%8b%e7%a8%bf.JPG"
+ &lt;img src="https://aquilauwu.github.io/zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/%e9%ab%98%e6%96%af%e6%89%8b%e7%a8%bf.JPG"
  
  alt=" 高斯手稿"
  title="高斯手稿"
