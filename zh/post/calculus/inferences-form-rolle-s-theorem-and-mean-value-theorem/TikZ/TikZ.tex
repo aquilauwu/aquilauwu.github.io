@@ -1,0 +1,577 @@
+\documentclass[multi=separate,varwidth]{standalone}
+\usepackage{pgfplots}
+\usepackage{caption}
+\usetikzlibrary{calc, arrows.meta}
+
+\newif\ifdimoutside
+\tikzset{
+	dim/outside/.is if=dimoutside,
+	pics/showDistance/.style n args={5}{
+		code={
+			% Get start & endpoint coordinates
+			\coordinate (P) at (#1);
+			\coordinate (Q) at (#2);
+			\path (P);
+			\pgfgetlastxy{\xP}{\yP}
+			\path (Q);
+			\pgfgetlastxy{\xQ}{\yQ}
+
+			% Scale multiplier
+			\coordinate (Pp) at ({\xP*#3},{\yP*#3});
+			\coordinate (Qp) at ({\xQ*#3},{\yQ*#3});
+
+			% Get extending distance
+			\pgfmathsetlengthmacro{\dis}{#5*#3*1cm}
+
+			% Place node
+			\node at ({(\xP+\xQ)/2*#3},{(\yP+\yQ)/2*#3}) {#4};
+			
+			% Draw lines with arrow
+			\ifdimoutside
+				\draw[-{latex}|] ($(Pp)!-\dis!(Qp)$) -- (Pp);
+				\draw[-{latex}|] ($(Qp)!-\dis!(Pp)$) -- (Qp);
+			\else
+				\draw[-{latex}|] ($(Pp)!\dis!(Qp)$) -- (Pp);
+				\draw[-{latex}|] ($(Qp)!\dis!(Pp)$) -- (Qp);
+			\fi
+  		}
+	}
+}
+
+% Scale mutiplier
+\def\scaleA{0.71}
+\def\scaleB{0.71}
+\def\scaleC{0.71}
+\def\scaleD{0.71}
+\def\scaleE{0.71}
+\def\scaleF{0.71}
+\def\scaleG{0.71}
+
+\begin{document}
+% Rolle 中值定理
+\begin{separate}
+	\begin{tikzpicture}[scale=\scaleA]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{0};\def\xPos{7};
+		\def\yNeg{0};\def\yPos{5};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{-(#1-3)^2/4+4}
+		}
+		\pgfmathdeclarefunction{Df}{1}{
+			\pgfmathparse{-(#1-3)/2}
+		}
+
+		\def\xA{1};\def\yA{f(\xA)};
+		\coordinate (A) at ({\xA},{\yA});
+
+		\def\xB{5};\def\yB{f(\xB)};
+		\coordinate (B) at ({\xB},{\yB});
+
+		\def\xC{3};\def\yC{f(\xC)};
+		\coordinate (C) at ({\xC},{\yC});
+
+		% functions
+		\draw[domain=0.6:6] plot (\x,{f(\x)});
+
+		% lines
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xA},0) -- (A);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xC},0) -- (C);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xB},0) -- (B);
+		\draw[dash pattern=on 3pt off 2.5pt] (0,{\yA}) -- ({\xB},{\yA});
+		\draw[shift={(C)},rotate={atan(Df(\xC))}] (-1.5,0) -- (1.5,0);
+
+		% nodes
+		\node at ({\xA},{-\axisGap}) {$\strut a$};
+		\node at ({\xC},{-\axisGap}) {$\strut c$};
+		\node at ({\xB},{-\axisGap}) {$\strut b$};
+
+		\node at ({\xA-0.25},{\yA+0.32}) {$\strut A$};
+		\node at ({\xC},{\yC+0.32}) {$\strut C$};
+		\node at ({\xB+0.25},{\yB+0.32}) {$\strut B$};
+	\end{tikzpicture}
+\end{separate}
+
+
+% Lagrange 中值定理
+\begin{separate}
+	\begin{tikzpicture}[scale=\scaleB]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{0};\def\xPos{7};
+		\def\yNeg{0};\def\yPos{5};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{-(#1-4)^2/4+4}
+		}
+		\pgfmathdeclarefunction{Df}{1}{
+			\pgfmathparse{-(#1-4)/2}
+		}
+
+		\def\xA{1};\def\yA{f(\xA)};
+		\coordinate (A) at ({\xA},{\yA});
+
+		\def\xB{5};\def\yB{f(\xB)};
+		\coordinate (B) at ({\xB},{\yB});
+
+		\def\xC{3};\def\yC{f(\xC)};
+		\coordinate (C) at ({\xC},{\yC});
+
+		% functions
+		\draw[domain=0.6:6] plot (\x,{f(\x)});
+
+		% lines
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xA},0) -- (A);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xC},0) -- (C);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xB},0) -- (B);
+		\draw[] (A) -- (B);
+		\draw[shift={(C)},rotate={atan(Df(\xC))}] (-1.5,0) -- (1.5,0);
+
+		% nodes
+		\node at ({\xA},{-\axisGap}) {$\strut a$};
+		\node at ({\xC},{-\axisGap}) {$\strut c$};
+		\node at ({\xB},{-\axisGap}) {$\strut b$};
+
+		\node at ({\xA-0.25},{\yA+0.32}) {$\strut A$};
+		\node at ({\xC},{\yC+0.32}) {$\strut C$};
+		\node at ({\xB+0.25},{\yC+0.32}) {$\strut B$};
+	\end{tikzpicture}
+\end{separate}
+
+
+% 常函数
+\begin{separate}
+	\begin{tikzpicture}[scale=\scaleC]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{0};\def\xPos{7};
+		\def\yNeg{0};\def\yPos{3.8};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{2.5}
+		}
+
+		\def\xA{1.5};\def\yA{f(\xA)};
+		\coordinate (A) at ({\xA},{\yA});
+
+		\def\xB{5.2};\def\yB{f(\xB)};
+		\coordinate (B) at ({\xB},{\yB});
+
+		% functions
+		\draw[domain={\xA}:{\xB}] plot (\x,{f(\x)});
+
+		% lines
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xA},0) -- (A);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xB},0) -- (B);
+
+		% nodes
+		\node at ({\xA},{-\axisGap}) {$\strut a$};
+		\node at ({\xB},{-\axisGap}) {$\strut b$};
+	\end{tikzpicture}
+\end{separate}
+
+
+% 函数平移
+\begin{separate}
+	\begin{tikzpicture}[scale=\scaleD]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{0};\def\xPos{7};
+		\def\yNeg{0};\def\yPos{5};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{(#1-3)^3/5-#1/2+3}
+		}
+		\pgfmathdeclarefunction{g}{1}{
+			\pgfmathparse{(#1-3)^3/5-#1/2+4}
+		}
+
+		\def\xA{1.5};\def\yA{f(\xA)};
+		\coordinate (A) at ({\xA},{\yA});
+
+		\def\xB{5.5};\def\yB{f(\xB)};
+		\coordinate (B) at ({\xB},{\yB});
+
+		\def\xC{1.5};\def\yC{g(\xC)};
+		\coordinate (C) at ({\xC},{\yC});
+
+		\def\xD{5.5};\def\yD{g(\xD)};
+		\coordinate (D) at ({\xD},{\yD});
+
+		\def\xE{3+sqrt(5/6)};\def\yE{f(\xE)};
+		\coordinate (E) at ({\xE},{\yE});
+
+		% functions
+		\draw[domain={\xA}:{\xB}] plot (\x,{f(\x)});
+		\draw[domain={\xA}:{\xB}] plot (\x,{g(\x)});
+
+		% lines
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xA},0) -- (C);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xB},0) -- (D);
+
+		\foreach \i in {-1,0,1,2}
+		\draw[-latex] ({\xE-\i*0.5},{f(\xE-\i*0.5)+0.1}) -- ({\xE-\i*0.5},{f(\xE-\i*0.5)+0.9});
+
+		\pic[dim/outside] {showDistance={{\xA-0.37},{\yA}}{{\xC-0.37},{\yC}}{\scaleD}{$c$}{0.8}};
+
+		% nodes
+		\node at ({\xA},{-\axisGap}) {$\strut a$};
+		\node at ({\xB},{-\axisGap}) {$\strut b$};
+
+		\node at ({\xB+0.35},{f(\xB)+0.2}) {$\strut f$};
+		\node at ({\xD+0.35},{g(\xD)+0.2}) {$\strut g$};
+	\end{tikzpicture}
+\end{separate}
+
+
+% 增减性检验
+\begin{separate}
+	\begin{tikzpicture}[scale=\scaleE]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{0};\def\xPos{7};
+		\def\yNeg{0};\def\yPos{5};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{#1^2/9+0.8}
+		}
+		\pgfmathdeclarefunction{Df}{1}{
+			\pgfmathparse{#1/5}
+		}
+
+		\def\xA{1.5};\def\yA{f(\xA)};
+		\coordinate (A) at ({\xA},{\yA});
+
+		\def\xB{5.5};\def\yB{f(\xB)};
+		\coordinate (B) at ({\xB},{\yB});
+
+		\def\xC{3.5};\def\yC{f(\xC)};
+		\coordinate (C) at ({\xC},{\yC});
+
+		% functions
+		\draw[domain={\xA-0.7}:{\xB+0.4}] plot (\x,{f(\x)});
+
+		% lines
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xA},0) -- (A);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xB},0) -- (B);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xC},0) -- (C);
+		\draw[shift={(C)},rotate={atan(Df(\xC))}] (-2.1,0) -- (1.8,0);
+
+		\draw[-latex,domain={\xC-0.7}:{\xC+0.4}] plot (\x,{f(\x+0.5)+0.5});
+
+		% nodes
+		\node at ({\xA},{-\axisGap}) {$\strut x_1$};
+		\node at ({\xB},{-\axisGap}) {$\strut x_2$};
+		\node at ({\xC},{-\axisGap}) {$\strut c$};
+
+		% labels
+		\node at (3.5,-1.1) {\strut(a)};
+	\end{tikzpicture}
+	\hspace{0.5cm}
+	\begin{tikzpicture}[scale=\scaleE]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{0};\def\xPos{7};
+		\def\yNeg{0};\def\yPos{5};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{(#1-7)^2/9+0.8}
+		}
+		\pgfmathdeclarefunction{Df}{1}{
+			\pgfmathparse{(#1-7)/5}
+		}
+
+		\def\xA{1.5};\def\yA{f(\xA)};
+		\coordinate (A) at ({\xA},{\yA});
+
+		\def\xB{5.5};\def\yB{f(\xB)};
+		\coordinate (B) at ({\xB},{\yB});
+
+		\def\xC{3.5};\def\yC{f(\xC)};
+		\coordinate (C) at ({\xC},{\yC});
+
+		% functions
+		\draw[domain={\xA-0.4}:{\xB+0.7}] plot (\x,{f(\x)});
+
+		% lines
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xA},0) -- (A);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xB},0) -- (B);
+		\draw[dash pattern=on 3pt off 2.5pt] ({\xC},0) -- (C);
+		\draw[shift={(C)},rotate={atan(Df(\xC))}] (-2.1,0) -- (1.8,0);
+
+		\draw[-latex,domain={\xC-0.4}:{\xC+0.7}] plot (\x,{f(\x-0.5)+0.5});
+
+		% nodes
+		\node at ({\xA},{-\axisGap}) {$\strut x_1$};
+		\node at ({\xB},{-\axisGap}) {$\strut x_2$};
+		\node at ({\xC},{-\axisGap}) {$\strut c$};
+
+		% labels
+		\node at (3.5,-1.1) {\strut(b)};
+	\end{tikzpicture}
+\end{separate}
+
+% 零点存在性
+\begin{separate}
+	% (a)
+	\begin{tikzpicture}[scale=\scaleF]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{-3.5};\def\xPos{3.5};
+		\def\yNeg{0};\def\yPos{5};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at (0,{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{exp(#1)}
+		}
+
+		% functions
+		\draw[domain=-2.8:1.5] plot (\x,{f(\x)});
+
+		% lines
+
+		% nodes
+		\node at (1.5+0.9,{f(1.35)}) {$\strut y = \mathrm{e}^x$};
+		\node at ({-\axisGap},1.1) {$\strut 1$};
+
+		% labels
+		\node at (0,-1.1) {\strut(a)};
+	\end{tikzpicture}
+	\hspace{0.5cm}
+	\begin{tikzpicture}[scale=\scaleF]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{0};\def\xPos{7};
+		\def\yNeg{-3};\def\yPos{2};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},0) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{ln(#1)}
+		}
+
+		% functions
+		\draw[domain=0.08:6,samples=200] plot (\x,{f(\x)});
+
+		% lines
+
+		% nodes
+		\node at (5.15,{exp(1.35)+\yNeg}) {$\strut y = \ln x$};
+		\node at (1.1,{-\axisGap}) {$\strut 1$};
+
+		% labels
+		\node at ({(\xNeg+\xPos)/2},{\yNeg-1.1}) {\strut(b)};
+	\end{tikzpicture}
+\end{separate}
+
+% 多个零点
+\begin{separate}
+	\begin{tikzpicture}[scale=\scaleG]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{-2.5};\def\xPos{4.5};
+		\def\yNeg{-1.5};\def\yPos{3.3};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{(0.3*(#1)^4-0.8*(#1)^3-1.6*(#1)^2+1.6*(#1))/2.7}
+		}
+
+		\def\cpA{-1.18831};
+		\def\cpB{0.402815};
+		\def\cpC{2.7855};
+
+		\def\heightA{f(\cpA)}
+		\def\heightB{f(\cpB)}
+		\def\heightC{f(\cpC)}
+
+		% functions
+		\draw[domain=-1.9348:3.7642,samples=80] plot (\x,{f(\x)-\heightC});
+
+		% lines
+
+		% nodes
+		\node at ({\cpC},{-\axisGap}) {$\strut x_1$};
+
+		% labels
+		\node at ({(\xNeg+\xPos)/2},{\yNeg-0.4}) {\strut(a)};
+	\end{tikzpicture}
+	\hspace{0.5cm}
+	\begin{tikzpicture}[scale=\scaleG]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{-2.5};\def\xPos{4.5};
+		\def\yNeg{-1.5};\def\yPos{3.3};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{(0.3*(#1)^4-0.8*(#1)^3-1.6*(#1)^2+1.6*(#1))/2.7}
+		}
+
+		\def\cpA{-1.18831};
+		\def\cpB{0.402815};
+		\def\cpC{2.7855};
+
+		\def\heightA{f(\cpA)}
+		\def\heightB{f(\cpB)}
+		\def\heightC{f(\cpC)}
+
+		% functions
+		\draw[domain=-2.1851:3.9083,samples=80] plot (\x,{f(\x)+1.5});
+
+		% lines
+
+		% nodes
+		\node at (1.8465-0.2,{-\axisGap}) {$\strut x_1$};
+		\node at (3.3431+0.37,{-\axisGap}) {$\strut x_2$};
+
+		% labels
+		\node at ({(\xNeg+\xPos)/2},{\yNeg-0.4}) {\strut(b)};
+	\end{tikzpicture}
+
+	\begin{tikzpicture}[scale=\scaleG]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{-2.5};\def\xPos{4.5};
+		\def\yNeg{-2.5};\def\yPos{2.3};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{(0.3*(#1)^4-0.8*(#1)^3-1.6*(#1)^2+1.6*(#1))/2.7}
+		}
+
+		\def\cpA{-1.18831};
+		\def\cpB{0.402815};
+		\def\cpC{2.7855};
+
+		\def\heightA{f(\cpA)}
+		\def\heightB{f(\cpB)}
+		\def\heightC{f(\cpC)}
+
+		% functions
+		\draw[domain=-2.1258:3.8712,samples=80] plot (\x,{f(\x)-\heightA});
+
+		% lines
+
+		% nodes
+		\node at ({\cpA},{-\axisGap}) {$\strut x_1$};
+		\node at (1.6424-0.3,{-\axisGap}) {$\strut x_2$};
+		\node at (3.5791-0.44,{-\axisGap}) {$\strut x_3$};
+
+		% labels
+		\node at ({(\xNeg+\xPos)/2},{\yNeg-0.4}) {\strut(c)};
+	\end{tikzpicture}
+	\hspace{0.5cm}
+	\begin{tikzpicture}[scale=\scaleG]
+		% axis
+		\def\axisGap{0.37};
+		\def\xNeg{-2.5};\def\xPos{4.5};
+		\def\yNeg{-2.5};\def\yPos{2.3};
+
+		\draw[latex-latex] ({\xPos},0) -- (0,0) -- (0,{\yPos});
+		\draw[] ({\xNeg},0) -- (0,0) -- (0,{\yNeg});
+		\node at ({-\axisGap},{-\axisGap}) {$\strut O$};
+		\node at ({\xPos-0.15},{-\axisGap}) {$\strut x$};
+		\node at ({-\axisGap},{\yPos-0.1}) {$\strut y$};
+
+		% definitions
+		\pgfmathdeclarefunction{f}{1}{
+			\pgfmathparse{(0.3*(#1)^4-0.8*(#1)^3-1.6*(#1)^2+1.6*(#1))/2.7}
+		}
+
+		\def\cpA{-1.18831};
+		\def\cpB{0.402815};
+		\def\cpC{2.7855};
+
+		\def\heightA{f(\cpA)}
+		\def\heightB{f(\cpB)}
+		\def\heightC{f(\cpC)}
+
+		% functions
+		\draw[domain=-2.2193:3.9304,samples=80] plot (\x,{f(\x)+0.3});
+
+		% lines
+
+		% nodes
+		\node at (-1.7166-0.26,{-\axisGap}) {$\strut x_1$};
+		\node at (-0.3888-0.3,\axisGap) {$\strut x_2$};
+		\node at (0.93,{-\axisGap}) {$\strut x_3$};
+		\node at (3.5791-0.39,{-\axisGap}) {$\strut x_4$};
+
+		% labels
+		\node at ({(\xNeg+\xPos)/2},{\yNeg-0.4}) {\strut(d)};
+	\end{tikzpicture}
+\end{separate}
+\end{document}

@@ -1,4 +1,345 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AQUILA</title><link>https://www.agileaquila.top/zh/</link><description>最新文章 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Thu, 19 Nov 2026 09:02:31 +0000</lastBuildDate><atom:link href="https://www.agileaquila.top/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://www.agileaquila.top/zh/post/other/page-for-test/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://www.agileaquila.top/zh/post/other/page-for-test/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AQUILA</title><link>https://www.agileaquila.top/zh/</link><description>最新文章 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Thu, 19 Nov 2026 13:32:40 +0000</lastBuildDate><atom:link href="https://www.agileaquila.top/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>Rolle 中值定理和 Lagrange 中值定理的推论</title><link>https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/</link><pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/</guid><description>从中值定理出发，推出的若干实用结论。</description><content:encoded>&lt;p&gt;笔者在学习数学的过程中，经常会被一些简单的问题卡住，绝大部分问题凭直觉能走得通，但缺乏严谨的证明，所以不敢轻易使用。其中有些问题可以通过 &lt;span class="thm-xref-placeholder" data-ref-id="Rolle 中值定理"&gt;&lt;/span&gt;
+和 &lt;span class="thm-xref-placeholder" data-ref-id="Lagrange 中值定理"&gt;&lt;/span&gt;
+得以解决，故将这些推论整理成一篇文章。&lt;/p&gt;
+&lt;h2 id="两个中值定理"&gt;两个中值定理&lt;/h2&gt;
+&lt;p&gt;这里只给出 Rolle 中值定理和 Lagrange 中值定理的陈述，不给出其证明过程。&lt;/p&gt;
+&lt;h3 id="rolle-中值定理"&gt;Rolle 中值定理&lt;/h3&gt;
+
+ &lt;span id="the-fig-ceef5a5474f4726c3d42919d088dbd78-2" data-fig-label="Rolle 中值定理" class="marginpar"&gt;
+ &lt;a class="has-img"&gt;
+ &lt;img src="https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/TikZ/TikZ-001.svg"
+ alt=" Rolle 中值定理" title="Rolle 中值定理" 
+ class="invert"
+ aria-describedby="fig-ceef5a5474f4726c3d42919d088dbd78-2"
+ loading="lazy"&gt;
+ &lt;/a&gt;
+ &lt;span&gt;&lt;/span&gt;
+ 
+
+&lt;strong class="fig-cap"&gt;Rolle 中值定理 &lt;/strong&gt;
+$A, B$ 两点等高，在 $C$ 点处切线水平，即 $f^\prime(c) = 0$&amp;nbsp;。
+
+
+ &lt;/span&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Rolle 中值定理&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="Rolle 中值定理"&gt;&lt;/span&gt;   若函数 $f$ 满足如下三个性质：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$f$ 在区间 $[a,b]$ 连续，&lt;/li&gt;
+&lt;li&gt;$f$ 在区间 $(a,b)$ 可微，&lt;/li&gt;
+&lt;li&gt;$f(a) = f(b)$ ，&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;则必然存在 $c\in(a,b)$ ，使得 $f^\prime(c) = 0$ 。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="lagrange-中值定理"&gt;Lagrange 中值定理&lt;/h3&gt;
+
+ &lt;span id="the-fig-ceef5a5474f4726c3d42919d088dbd78-4" data-fig-label="Lagrange 中值定理" class="marginpar"&gt;
+ &lt;a class="has-img"&gt;
+ &lt;img src="https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/TikZ/TikZ-002.svg"
+ alt=" Lagrange 中值定理" title="Lagrange 中值定理" 
+ class="invert"
+ aria-describedby="fig-ceef5a5474f4726c3d42919d088dbd78-4"
+ loading="lazy"&gt;
+ &lt;/a&gt;
+ &lt;span&gt;&lt;/span&gt;
+ 
+
+&lt;strong class="fig-cap"&gt;Lagrange 中值定理 &lt;/strong&gt;
+割线过 $A, B$ 两点，把它平行移动，则在点 $C$ 处刚好与曲线接触。
+
+
+ &lt;/span&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Lagrange 中值定理&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="Lagrange 中值定理"&gt;&lt;/span&gt;   若函数 $f$ 满足如下两个性质：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$f$ 在区间 $[a,b]$ 连续，&lt;/li&gt;
+&lt;li&gt;$f$ 在区间 $(a,b)$ 可微，&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;则必然存在 $c\in(a,b)$ ，使得&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class="eq-container fullwidth"
+ id="eq-Lagrange中值定理"
+ data-eq-label="Lagrange中值定理"&gt;
+
+&lt;div class="scroll-container"&gt;$$
+ f^\prime(c) = \frac{f(b)-f(a)}{b-a}
+$$&lt;/div&gt;
+
+ &lt;div class="eq-label"&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;/blockquote&gt;
+&lt;p&gt;当 $f(a) = f(b)$ 时，&lt;span class="thm-xref-placeholder" data-ref-id="Lagrange 中值定理"&gt;&lt;/span&gt;
+退化为 &lt;span class="thm-xref-placeholder" data-ref-id="Rolle 中值定理"&gt;&lt;/span&gt;
+。&lt;/p&gt;
+&lt;h2 id="一些推论"&gt;一些推论&lt;/h2&gt;
+&lt;h3 id="基础推论"&gt;基础推论&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;推论&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="常函数"&gt;&lt;/span&gt;   若函数 $f$ 对任意的 $x \in (a,b)$ 满足 $f^\prime(x) = 0$ ，则 $f$ 在该区间上为常函数。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+ &lt;span id="the-fig-ceef5a5474f4726c3d42919d088dbd78-10" data-fig-label="常函数" class="marginpar"&gt;
+ &lt;a class="has-img"&gt;
+ &lt;img src="https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/TikZ/TikZ-003.svg"
+ alt=" 常函数" title="常函数" 
+ class="invert"
+ aria-describedby="fig-ceef5a5474f4726c3d42919d088dbd78-10"
+ loading="lazy"&gt;
+ &lt;/a&gt;
+ &lt;span&gt;&lt;/span&gt;
+ 
+
+
+可以看到连续函数 $f^\prime$ 处处为 $0$&amp;nbsp;，只可能是常函数。
+
+
+ &lt;/span&gt;
+
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;   令 $x_1, x_2$ 是区间 $(a,b)$ 上的任意的两个数，满足 $x_1 &amp;lt; x_2$ 。由于 $f$ 在 $(a,b)$ 上可微，因此 $f$ 必然在 $(x_1, x_2)$ 上可微，且在 $[x_1, x_2]$ 上连续。根据 &lt;span class="thm-xref-placeholder" data-ref-id="Lagrange 中值定理"&gt;&lt;/span&gt;
+，必然存在 $c$ 满足 $x_1 &amp;lt; c &amp;lt; x_2$，使&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class="eq-container"
+ id="eq-常函数"
+ data-eq-label="常函数"&gt;
+
+&lt;div class="scroll-container"&gt;$$
+ f^\prime(c) = \frac{f(x_2)-f(x_1)}{x_2-x_1}
+$$&lt;/div&gt;
+
+ &lt;div class="eq-label"&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;又因为 $f^\prime(x) = 0$ 必然导致 $f^\prime(c) = 0$ ，所以 $f(x_2)-f(x_1) = 0$ ，即 $f(x_2) = f(x_1)$ 。之前提到过 $x_1, x_2$ 在区间 $(a,b)$ 上是任意的，这告诉我们 $f$ 在该区间上是个常函数，见 &lt;span data-fig-ref="常函数" data-fig-sub=""&gt;&lt;/span&gt;。
+
+&lt;input id="marginnote-14" class="marginpar-ctrl" type="checkbox" aria-label="附加备注" aria-controls="the-marginnote-14" checked hidden&gt;
+&lt;label for="marginnote-14" class="has-counter" tabindex="0" aria-label="附加备注" aria-controls="the-marginnote-14"&gt;&lt;/label&gt;
+&lt;span id="the-marginnote-14" class="marginpar " role="note"&gt;
+ 这里存在一个问题：为什么不可以根据 $f^\prime(c) = 0$&amp;nbsp;，通过 &lt;span class="thm-xref-placeholder" data-ref-id="Rolle 中值定理"&gt;&lt;/span&gt;
+ 直接得到 $f(x_1) = f(x_2)$&amp;nbsp;？这是因为&amp;#12300;存在一点导数为 $0$&amp;nbsp;&amp;#12301;本身推不出两端相等，这是不严谨的，而 &lt;span class="thm-xref-placeholder" data-ref-id="Lagrange 中值定理"&gt;&lt;/span&gt;
+ 可以直接给出 
+
+&lt;span data-eq-ref="常函数" data-eq-sub=""&gt;&lt;/span&gt;
+。
+
+ &lt;span class="mpnl" style="display: block; height: 0.618pc;"&gt;&lt;/span&gt;
+
+ 换个角度看，使用 &lt;span class="thm-xref-placeholder" data-ref-id="Rolle 中值定理"&gt;&lt;/span&gt;
+的条件包括 $f(x_1) = f(x_2)$&amp;nbsp;，而这正是需要被证明的部分，所以这样做属于循环论证。
+&lt;/span&gt;
+&lt;span class="qed-fill"&gt;&lt;/span&gt;
+&lt;span class="qed-symbol"&gt;$\blacksquare$&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;推论&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="函数平移"&gt;&lt;/span&gt;   若函数 $f, g$ 对任意的 $x \in (a,b)$ 满足 $f^\prime(x) = g^\prime(x)$ ，则 $f-g$ 在该区间上为常函数，即 $f(x) = g(x) + c$ ，其中 $c$ 为常数。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+ &lt;span id="the-fig-ceef5a5474f4726c3d42919d088dbd78-17" data-fig-label="函数平移" class="marginpar"&gt;
+ &lt;a class="has-img"&gt;
+ &lt;img src="https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/TikZ/TikZ-004.svg"
+ alt=" 函数平移" title="函数平移" 
+ class="invert"
+ aria-describedby="fig-ceef5a5474f4726c3d42919d088dbd78-17"
+ loading="lazy"&gt;
+ &lt;/a&gt;
+ &lt;span&gt;&lt;/span&gt;
+ 
+
+
+函数 $g$ 正好是把函数 $f$ 向上平移 $c$ 个单位得到的。这两个连续函数导函数相同，从直觉上来说原函数也应相同。
+
+
+ &lt;/span&gt;
+
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;   令 $F(x) = f(x) - g(x)$ ，则有&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class="eq-container"
+ id="eq-函数平移"
+ data-eq-label="函数平移"&gt;
+
+&lt;div class="scroll-container"&gt;$$
+ F^\prime(x) = f^\prime(x)-g^\prime(x) = 0
+$$&lt;/div&gt;
+
+ &lt;div class="eq-label"&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;根据 &lt;span class="thm-xref-placeholder" data-ref-id="常函数"&gt;&lt;/span&gt;
+，$F(x) = f(x) - g(x) = c$，$c$ 为常数，故 $f(x) = g(x) + c$ ，见 &lt;span data-fig-ref="函数平移" data-fig-sub=""&gt;&lt;/span&gt;。
+&lt;span class="qed-fill"&gt;&lt;/span&gt;
+&lt;span class="qed-symbol"&gt;$\blacksquare$&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;推论&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="函数相同"&gt;&lt;/span&gt;   若函数 $f, g$ 对任意的 $x \in (a,b)$ 满足 $f^\prime(x) = g^\prime(x)$ ，且存在 $x_0 \in (a,b)$ 使得 $f(x_0) = g(x_0)$ ，则这两个函数相同。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;   根据 &lt;span class="thm-xref-placeholder" data-ref-id="函数平移"&gt;&lt;/span&gt;
+，有 $f(x) = g(x) + c$ 。又因为 $f(x_0) = g(x_0)$ ，所以 $c = 0$ 。因此对于任意的 $x \in (a,b)$ ，都有 $f(x) = g(x)$ 。这相当于 &lt;span data-fig-ref="函数平移" data-fig-sub=""&gt;&lt;/span&gt; 中的两条曲线重合。
+&lt;span class="qed-fill"&gt;&lt;/span&gt;
+&lt;span class="qed-symbol"&gt;$\blacksquare$&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;推论&lt;/strong&gt;&lt;/em&gt;   &lt;em&gt;&lt;strong&gt;增减性检验&lt;/strong&gt;&lt;/em&gt;   若函数 $f$ 在一段区间上满足：
+
+&lt;input id="marginnote-26" class="marginpar-ctrl" type="checkbox" aria-label="附加备注" aria-controls="the-marginnote-26" checked hidden&gt;
+&lt;label for="marginnote-26" class="has-counter" tabindex="0" aria-label="附加备注" aria-controls="the-marginnote-26"&gt;&lt;/label&gt;
+&lt;span id="the-marginnote-26" class="marginpar " role="note"&gt;
+ 又称 I/D Test（ Increasing/Decreasing Test&amp;nbsp;）。
+&lt;/span&gt;&lt;span class="thm-label-marker" data-thm-id="增减性检验"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$f^\prime(x) &amp;gt; 0$，则 $f$ 在这段区间上严格递增；&lt;/li&gt;
+&lt;li&gt;$f^\prime(x) &amp;lt; 0$，则 $f$ 在这段区间上严格递减。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;figure 
+ 
+ data-fig-label="增减性检验" id="增减性检验"
+&gt;
+ &lt;a class="has-img"&gt;
+ &lt;img src="https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/TikZ/TikZ-005.svg"
+ alt="增减性检验"
+ title="增减性检验"class="invert"
+ aria-describedby="fig-ceef5a5474f4726c3d42919d088dbd78-28"
+ loading="lazy"
+ &gt;
+ &lt;/a&gt;
+ &lt;span id="the-fig-ceef5a5474f4726c3d42919d088dbd78-28" class="marginpar abs"&gt;&amp;#8204;
+
+
+$c \in (x_1,x_2)$&amp;nbsp;。(a)&amp;ensp;$f^\prime(c) &gt; 0$&amp;nbsp;，增函数。(b)&amp;ensp;$f^\prime(c) &lt; 0$&amp;nbsp;，减函数。
+
+
+ &lt;/span&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;   令 $x_1, x_2$ 是这段区间上任意的两个数，满足 $x_1 &amp;lt; x_2$ 。由于 $f^\prime(x) &amp;gt; 0$ ，所以 $f$ 在 $x \in [x_1, x_2]$ 上可微，进一步在 $x \in [x_1, x_2]$ 上连续。由 &lt;span class="thm-xref-placeholder" data-ref-id="Lagrange 中值定理"&gt;&lt;/span&gt;
+，有&lt;/p&gt;
+
+
+
+
+
+
+
+
+&lt;div class="eq-container"
+ id="eq-增减性检验"
+ data-eq-label="增减性检验"&gt;
+
+&lt;div class="scroll-container"&gt;$$
+ f(x_2)-f(x_1) = f^\prime(c)(x_2-x_1)
+$$&lt;/div&gt;
+
+ &lt;div class="eq-label"&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;其中 $x_1 &amp;lt; c &amp;lt; x_2$ 。因为 $f^\prime(c) &amp;gt; 0$ ，且 $x_2-x_1 &amp;gt; 0$ ，故等式右侧恒大于 $0$ ，进而得到 $f(x_2)-f(x_1) &amp;gt; 0$ ，即 $f(x_1) &amp;lt; f(x_2)$ ，这告诉我们 $f$ 在这段区间上严格递增，见 &lt;span data-fig-ref="增减性检验" data-fig-sub="a"&gt;&lt;/span&gt;。&lt;/p&gt;
+&lt;p&gt;用同样的方法可以证明 $f^\prime(x) &amp;lt; 0$ 的情况，见 &lt;span data-fig-ref="增减性检验" data-fig-sub="b"&gt;&lt;/span&gt;。
+&lt;span class="qed-fill"&gt;&lt;/span&gt;
+&lt;span class="qed-symbol"&gt;$\blacksquare$&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id="零点存在性"&gt;零点存在性&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;推论&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="零点上限"&gt;&lt;/span&gt;   若函数 $f^\prime$ 在区间 $(a,b)$ 上没有零点，即 $f^\prime(x) \neq 0$ ，$f^\prime$ 在该区间上存在，则 $f$ 在该区间上至多只有一个零点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure 
+ 
+ data-fig-label="零点存在性" id="零点存在性"
+&gt;
+ &lt;a class="has-img"&gt;
+ &lt;img src="https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/TikZ/TikZ-006.svg"
+ alt="零点存在性"
+ title="零点存在性"class="invert"
+ aria-describedby="fig-ceef5a5474f4726c3d42919d088dbd78-35"
+ loading="lazy"
+ &gt;
+ &lt;/a&gt;
+ &lt;span id="the-fig-ceef5a5474f4726c3d42919d088dbd78-35" class="marginpar abs"&gt;&amp;#8204;
+
+
+函数在各自的区间上有 $y^\prime \neq 0$&amp;nbsp;。(a)&amp;ensp;零点个数为 $0$ 的情况，$x \in \mathbb{R}$&amp;nbsp;。(b)&amp;ensp;零点个数为 $1$ 的情况，$x \gt 0$&amp;nbsp;。
+
+
+ &lt;/span&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;   假设 $f$ 在区间 $(a,b)$ 上存在两个零点 $x_1, x_2$ ，满足 $x_1 &amp;lt; x_2$ 。由于 $f^\prime$ 在区间 $(a,b)$ 上存在，故 $f^\prime$ 在区间 $[x_1, x_2]$ 上存在。&lt;/p&gt;
+&lt;p&gt;根据 &lt;span class="thm-xref-placeholder" data-ref-id="Rolle 中值定理"&gt;&lt;/span&gt;
+，必然存在 $c$ 满足 $a &amp;lt; x_1 &amp;lt; c &amp;lt; x_2 &amp;lt; b$ ，使 $f^\prime(c) = 0$ 。这与 $f^\prime(x) \neq 0$ 矛盾，故假设不成立，即 $f$ 在区间 $(a,b)$ 上的零点个数不可能大于等于 $2$ 。
+&lt;span class="qed-fill"&gt;&lt;/span&gt;
+&lt;span class="qed-symbol"&gt;$\blacksquare$&lt;/span&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;推论&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="多个零点"&gt;&lt;/span&gt;   可以将 &lt;span class="thm-xref-placeholder" data-ref-id="零点上限"&gt;&lt;/span&gt;
+ 推广到 $f^\prime$ 的零点个数为 $n$ 的情况，即：若函数 $f^\prime$ 在区间 $(a,b)$ 上有 $n$ 个零点，$f^\prime$ 在该区间上存在，则 $f$ 在该区间上至多有 $n+1$ 个零点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure 
+ 
+ data-fig-label="多个零点" id="多个零点"
+&gt;
+ &lt;a class="has-img"&gt;
+ &lt;img src="https://www.agileaquila.top/zh/post/calculus/inferences-form-rolle-s-theorem-and-mean-value-theorem/TikZ/TikZ-007.svg"
+ alt="多个零点"
+ title="多个零点"class="invert"
+ aria-describedby="fig-ceef5a5474f4726c3d42919d088dbd78-40"
+ loading="lazy"
+ &gt;
+ &lt;/a&gt;
+ &lt;span id="the-fig-ceef5a5474f4726c3d42919d088dbd78-40" class="marginpar abs"&gt;&amp;#8204;
+
+
+这是一个定义在 $\mathbb{R}$ 上的四次函数 $y = f(x)$&amp;nbsp;，$f^\prime$ 的零点一共有 $3$ 个。它不断向下平移的过程中，$f$ 的零点个数分别为：(a)&amp;ensp;$1$ 个；(b)&amp;ensp;$2$ 个；(c)&amp;ensp;$3$ 个；(d)&amp;ensp;$4$ 个。根据 &lt;span class="thm-xref-placeholder" data-ref-id="多个零点"&gt;&lt;/span&gt;
+，$f$ 的零点个数不可能大于 $3+1 = 4$&amp;nbsp;，当然，$f$ 也可以不存在任何零点。
+
+
+ &lt;/span&gt;
+ &lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;   假设 $f$ 在区间 $(a,b)$ 上至少有 $n+2$ 个互不相同的零点 $x_1, x_2, \cdots, x_{n+2}$ ，满足 $x_1 &amp;lt; x_2 &amp;lt; \cdots &amp;lt; x_{n+2}$ 。由于 $f^\prime$ 在区间 $(a,b)$ 上存在，故 $f^\prime$ 在任意的区间 $[x_i, x_{i+1}]$ 上存在，$i = 1,2,\cdots,n+1$ 。&lt;/p&gt;
+&lt;p&gt;根据 &lt;span class="thm-xref-placeholder" data-ref-id="Rolle 中值定理"&gt;&lt;/span&gt;
+，对于任意的区间 $[x_i, x_{i+1}]$ ，都必然存在 $c_i$ 满足 $a &amp;lt; x_i &amp;lt; c_i &amp;lt; x_{i+1} &amp;lt; b$ ，使 $f^\prime(c_i) = 0$ 。这样的 $c_i$ 有 $n+1$ 个，所以 $f^\prime$ 在区间 $(a,b)$ 上有 $n+1$ 个零点。这与原条件矛盾，故假设不成立，即 $f$ 在区间 $(a,b)$ 上的零点个数不可能大于等于 $n+2$ 。
+&lt;span class="qed-fill"&gt;&lt;/span&gt;
+&lt;span class="qed-symbol"&gt;$\blacksquare$&lt;/span&gt;&lt;/p&gt;
+&lt;h2 id="参考文献"&gt;参考文献&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div class="bib-item" 
+ id="bib-" 
+ 
+ &gt;
+ 
+ 
+
+ 
+&lt;/div&gt;
+</content:encoded><category>微积分</category><enclosure url="/zh/post/other/%e6%b5%8b%e8%af%95%e9%a1%b5%e9%9d%a2/%e5%86%b0%e6%8b%bf%e9%93%81.JPG" length="0" type="image/jpeg"/></item><item><title>测试页面</title><link>https://www.agileaquila.top/zh/post/others/page-for-test/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://www.agileaquila.top/zh/post/others/page-for-test/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
 &lt;h2 id="基本正文元素"&gt;基本正文元素&lt;/h2&gt;
 &lt;h3 id="基本字形--列表"&gt;基本字形 &amp;amp; 列表&lt;/h3&gt;
 &lt;p&gt;本节将使用有序列表、无序列表，介绍本站可用的基础文字样式。&lt;/p&gt;
@@ -44,14 +385,14 @@
  data-fig-label="天鹅拉花" id="天鹅拉花"
 &gt;
  &lt;a class="has-img"&gt;
- &lt;img src="https://www.agileaquila.top/zh/post/other/page-for-test/latte-art.JPG"
+ &lt;img src="https://www.agileaquila.top/zh/post/others/page-for-test/latte-art.JPG"
  alt="图片加载失败或鼠标悬停时会显示这行文字"
  title="图片加载失败或鼠标悬停时会显示这行文字"
- aria-describedby="fig-e9f179f11664df35ccb0ee9bdd7c3d78-1"
+ aria-describedby="fig-34f03269ca55cc313401922e9857255d-1"
  loading="lazy"
  &gt;
  &lt;/a&gt;
- &lt;span id="the-fig-e9f179f11664df35ccb0ee9bdd7c3d78-1" class="marginpar abs"&gt;&amp;#8204;
+ &lt;span id="the-fig-34f03269ca55cc313401922e9857255d-1" class="marginpar abs"&gt;&amp;#8204;
 
 &lt;strong class="fig-cap"&gt;图片标题 &lt;/strong&gt;
 图片注释，这是一杯拿铁。
@@ -63,12 +404,12 @@
 &lt;p&gt;点击图片即可查看大图。&lt;span data-fig-ref="天鹅拉花" data-fig-sub=""&gt;&lt;/span&gt;那杯咖啡是我自己拉花做的，不错吧！&lt;/p&gt;
 &lt;h3 id="边注小图"&gt;边注小图&lt;/h3&gt;
 
- &lt;span id="the-fig-e9f179f11664df35ccb0ee9bdd7c3d78-3" data-fig-label="冰拿铁" class="marginpar"&gt;
+ &lt;span id="the-fig-34f03269ca55cc313401922e9857255d-3" data-fig-label="冰拿铁" class="marginpar"&gt;
  &lt;a class="has-img"&gt;
- &lt;img src="https://www.agileaquila.top/zh/post/other/page-for-test/latte-ice.JPG"
+ &lt;img src="https://www.agileaquila.top/zh/post/others/page-for-test/latte-ice.JPG"
  alt=" 冰拿铁" title="冰拿铁" 
  
- aria-describedby="fig-e9f179f11664df35ccb0ee9bdd7c3d78-3"
+ aria-describedby="fig-34f03269ca55cc313401922e9857255d-3"
  loading="lazy"&gt;
  &lt;/a&gt;
  &lt;span&gt;&lt;/span&gt;
@@ -85,17 +426,17 @@
 &lt;p&gt;下方为通栏大图，若要展示信息量大、横向较长的图像，这绝对是首选方案。可以注意到：所有图片都会按章节自动编号，且支持引用跳转。以此验证图片引用功能正常：如 &lt;span data-fig-ref="高斯手稿" data-fig-sub=""&gt;&lt;/span&gt;，图注有时会嵌入链接，一般用于标注图像来源。&lt;/p&gt;
 &lt;figure class="fullwidth" data-fig-label="高斯手稿" id="高斯手稿"&gt;
  &lt;a class="has-img"&gt;
- &lt;img src="https://www.agileaquila.top/zh/post/other/page-for-test/gauss.JPG"
+ &lt;img src="https://www.agileaquila.top/zh/post/others/page-for-test/gauss.JPG"
  
  alt=" 高斯手稿"
  title="高斯手稿"
  
  
- aria-describedby="fig-e9f179f11664df35ccb0ee9bdd7c3d78-6"
+ aria-describedby="fig-34f03269ca55cc313401922e9857255d-6"
  loading="lazy"
  &gt;
  &lt;/a&gt;
- &lt;figcaption id="fig-e9f179f11664df35ccb0ee9bdd7c3d78-6"&gt;&amp;#8204;
+ &lt;figcaption id="fig-34f03269ca55cc313401922e9857255d-6"&gt;&amp;#8204;
 
 &lt;strong class="fig-cap"&gt;高斯手稿 &lt;/strong&gt;
 卡尔・弗里德里希・高斯《数学日记》手稿第五页，1796‑1814，哥廷根大学馆藏，公有领域资源。
@@ -401,7 +742,7 @@ $$&lt;/div&gt;
 &lt;div id="the-marginpar-36" class="marginpar abs" role="note"&gt;
 
  
- &lt;div class="table-wrap" data-tab-label="x^(-2)" id="tab-x^(-2)"&gt;
+ &lt;div class="table-wrap" data-tab-label="inverse-square" id="tab-inverse-square"&gt;
  &lt;div class="table-center"&gt;
  &lt;table&gt;
  &lt;thead&gt;
@@ -454,7 +795,7 @@ $$&lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;边注栏同样支持表格与交叉引用，示例：&lt;span data-tab-ref="x^(-2)"&gt;&lt;/span&gt;。边注表格适合承载信息量较小的内容。&lt;/p&gt;
+&lt;p&gt;边注栏同样支持表格与交叉引用，示例：&lt;span data-tab-ref="inverse-square"&gt;&lt;/span&gt;。边注表格适合承载信息量较小的内容。&lt;/p&gt;
 &lt;h2 id="代码块"&gt;代码块&lt;/h2&gt;
 &lt;p&gt;下面是一段空白 HTML 模板。第 3 至 7 行添加了行高亮，用来突出页面 &lt;code class="chroma" class="code-inline language-html"&gt;&lt;span class="p"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;lt;/&lt;/span&gt;&lt;span class="nt"&gt;head&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt; 内的基础元信息配置。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;div class="chroma"&gt;
@@ -511,4 +852,4 @@ $$&lt;/div&gt;
 
  
 &lt;/div&gt;
-</content:encoded><category>其他</category><enclosure url="/zh/post/other/page-for-test/latte-ice.JPG" length="0" type="image/jpeg"/></item></channel></rss>
+</content:encoded><category>其他</category><enclosure url="/zh/post/others/page-for-test/latte-ice.JPG" length="0" type="image/jpeg"/></item></channel></rss>
