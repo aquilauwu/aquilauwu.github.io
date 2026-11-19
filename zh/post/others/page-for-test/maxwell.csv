@@ -1,0 +1,5 @@
+"基本微分方程的等价形式","自然变量","Maxwell 关系"
+"$\mathrm{d}U = T\,\mathrm{d}S-p\,\mathrm{d}V$","$(S,V)$","$\displaystyle\left(\frac{\partial T}{\partial V}\right)_S=-\left(\frac{\partial p}{\partial S}\right)_V$"
+"$\mathrm{d}(U+pV) = \mathrm{d}H = T\,\mathrm{d}S+V\,\mathrm{d}p$","$(S,p)$","$\displaystyle\left(\frac{\partial T}{\partial p}\right)_S=\left(\frac{\partial V}{\partial S}\right)_p$"
+"$\mathrm{d}(U-TS) = \mathrm{d}F = -S\,\mathrm{d}T-p\,\mathrm{d}V$","$(T,V)$","$\displaystyle\left(\frac{\partial S}{\partial V}\right)_T=\left(\frac{\partial p}{\partial T}\right)_V$"
+"$\mathrm{d}(U-TS+pV) = \mathrm{d}G = -S\,\mathrm{d}T+V\,\mathrm{d}p$","$(T,p)$","$\displaystyle\left(\frac{\partial S}{\partial p}\right)_T=-\left(\frac{\partial V}{\partial T}\right)_p$"
