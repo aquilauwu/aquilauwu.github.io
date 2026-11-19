@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    {
+      "source": "$host",
+      "host": "agileaquila-k2vahvea.edgeone.dev",
+      "destination": "https://www.agileaquila.top$request_uri",
+      "statusCode": 301
+    }
+  ]
+}
