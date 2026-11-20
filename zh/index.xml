@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AQUILA</title><link>https://www.agileaquila.top/zh/</link><description>最新文章 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Fri, 20 Nov 2026 05:40:24 +0000</lastBuildDate><atom:link href="https://www.agileaquila.top/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://www.agileaquila.top/zh/post/others/page-for-test/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://www.agileaquila.top/zh/post/others/page-for-test/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AQUILA</title><link>https://www.agileaquila.top/zh/</link><description>最新文章 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Fri, 20 Nov 2026 07:33:03 +0000</lastBuildDate><atom:link href="https://www.agileaquila.top/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://www.agileaquila.top/zh/post/others/page-for-test/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://www.agileaquila.top/zh/post/others/page-for-test/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
 &lt;h2 id="基本正文元素"&gt;基本正文元素&lt;/h2&gt;
 &lt;h3 id="基本字形--列表"&gt;基本字形 &amp;amp; 列表&lt;/h3&gt;
 &lt;p&gt;本节将使用有序列表、无序列表，介绍本站可用的基础文字样式。&lt;/p&gt;
@@ -60,7 +60,7 @@
  &lt;/span&gt;
  &lt;/figure&gt;
 
-&lt;p&gt;点击图片即可查看大图。&lt;span data-fig-ref="天鹅拉花" data-fig-sub=""&gt;&lt;/span&gt;那杯咖啡是我自己拉花做的，不错吧！&lt;/p&gt;
+&lt;p&gt;点击图片即可查看大图。&lt;span data-fig-ref="天鹅拉花" data-fig-sub=""&gt;&lt;/span&gt; 那杯咖啡是我自己拉花做的，不错吧！&lt;/p&gt;
 &lt;h3 id="边注小图"&gt;边注小图&lt;/h3&gt;
 
  &lt;span id="the-fig-34f03269ca55cc313401922e9857255d-3" data-fig-label="冰拿铁" class="marginpar"&gt;
@@ -82,7 +82,7 @@
 
 &lt;p&gt;大屏场景下，如果正文文本高度不足，边注图不会干扰后续小节排版，仅会留出空白，&lt;span data-fig-ref="冰拿铁" data-fig-sub=""&gt;&lt;/span&gt; 正是这种效果。&lt;/p&gt;
 &lt;h3 id="通栏大图"&gt;通栏大图&lt;/h3&gt;
-&lt;p&gt;下方为通栏大图，若要展示信息量大、横向较长的图像，这绝对是首选方案。可以注意到：所有图片都会按章节自动编号，且支持引用跳转。以此验证图片引用功能正常：如 &lt;span data-fig-ref="高斯手稿" data-fig-sub=""&gt;&lt;/span&gt;，图注有时会嵌入链接，一般用于标注图像来源。&lt;/p&gt;
+&lt;p&gt;下方为通栏大图，若要展示信息量大、横向较长的图像，这绝对是首选方案。可以注意到：所有图片都会按章节自动编号，且支持引用跳转。以此验证图片引用功能正常：如 &lt;span data-fig-ref="高斯手稿" data-fig-sub=""&gt;&lt;/span&gt; ，图注有时会嵌入链接，一般用于标注图像来源。&lt;/p&gt;
 &lt;figure class="fullwidth" data-fig-label="高斯手稿" id="高斯手稿"&gt;
  &lt;a class="has-img"&gt;
  &lt;img src="https://www.agileaquila.top/zh/post/others/page-for-test/gauss.webp"
@@ -134,7 +134,7 @@ $$&lt;/div&gt;
 &lt;p&gt;对于较长的数学表达式，行内公式通常不够适用，此时应使用通栏公式。
 
 &lt;span data-eq-ref="sinx19阶Maclaurin" data-eq-sub=""&gt;&lt;/span&gt;
-是 $\sin x$ 的 $19$ 阶 Maclaurin 展开：&lt;/p&gt;
+ 是 $\sin x$ 的 $19$ 阶 Maclaurin 展开：&lt;/p&gt;
 
 
 
@@ -209,13 +209,13 @@ $$&lt;/div&gt;
 
 &lt;/div&gt;
 
-&lt;p&gt;多行公式
+&lt;p&gt;多行公式 
 
 &lt;span data-eq-ref="连分式" data-eq-sub=""&gt;&lt;/span&gt;
-支持拆分为子编号
+ 支持拆分为子编号 
 
 &lt;span data-eq-ref="连分式" data-eq-sub="a"&gt;&lt;/span&gt;
-和
+ 和 
 
 &lt;span data-eq-ref="连分式" data-eq-sub="b"&gt;&lt;/span&gt;
 ，所有编号均可点击跳转。原生 MathJax 4.0 在 HTML 中并不自带自动编号与交叉引用功能，这套编号系统是通过 JavaScript 扫描公式 DOM、动态重写页面实现的。&lt;/p&gt;
