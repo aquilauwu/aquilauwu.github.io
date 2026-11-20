@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AQUILA</title><link>https://www.agileaquila.top/zh/</link><description>最新文章 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Fri, 20 Nov 2026 07:36:46 +0000</lastBuildDate><atom:link href="https://www.agileaquila.top/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://www.agileaquila.top/zh/post/others/page-for-test/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://www.agileaquila.top/zh/post/others/page-for-test/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AQUILA</title><link>https://www.agileaquila.top/zh/</link><description>最新文章 于 AQUILA</description><generator>Hugo 0.159.2</generator><language>zh-CN</language><managingEditor>AgileAquila@outlook.com (小鹰 Aquila)</managingEditor><webMaster>AgileAquila@outlook.com (小鹰 Aquila)</webMaster><lastBuildDate>Fri, 20 Nov 2026 21:56:21 +0000</lastBuildDate><atom:link href="https://www.agileaquila.top/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>测试页面</title><link>https://www.agileaquila.top/zh/post/others/page-for-test/</link><pubDate>Tue, 20 Oct 2026 00:00:00 +0000</pubDate><author>AgileAquila@outlook.com (小鹰 Aquila)</author><dc:creator>小鹰 Aquila</dc:creator><guid>https://www.agileaquila.top/zh/post/others/page-for-test/</guid><description>本页面用于测试本站元素是否正常显示.</description><content:encoded>&lt;p&gt;本文收录了站点正文所需的全部组件与排版元素，包含边注栏、数学公式、表格等。只要本页面渲染符合预期，即可判定博客其余页面不会出现显示异常。本文用于站点排版调试。&lt;/p&gt;
 &lt;h2 id="基本正文元素"&gt;基本正文元素&lt;/h2&gt;
 &lt;h3 id="基本字形--列表"&gt;基本字形 &amp;amp; 列表&lt;/h3&gt;
 &lt;p&gt;本节将使用有序列表、无序列表，介绍本站可用的基础文字样式。&lt;/p&gt;
@@ -267,7 +267,19 @@ $$&lt;/div&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;&lt;strong&gt;推论&lt;/strong&gt;&lt;/em&gt;&lt;span class="thm-label-marker" data-thm-id="推论 2"&gt;&lt;/span&gt;   这是令一条推论。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;证明&lt;/strong&gt;   这是它的证明过程。
+&lt;p&gt;
+
+
+
+
+
+
+
+
+&lt;strong class="answer proof"&gt;
+ 证明 &amp;ensp; 
+&lt;/strong&gt;
+这是它的证明过程。
 &lt;span class="qed-fill"&gt;&lt;/span&gt;
 &lt;span class="qed-symbol"&gt;$\blacksquare$&lt;/span&gt;&lt;/p&gt;
 &lt;blockquote&gt;
@@ -385,22 +397,19 @@ $$&lt;/div&gt;
  &lt;/div&gt;
  
  &lt;p class="table-caption"&gt;
- 
  &lt;strong&gt;Maxwell 关系&lt;/strong&gt;
  
- 
  该表汇总四个热力学特征函数对应的微分形式与常用的 Maxwell 关系式。
- &lt;/p&gt;
+&lt;/p&gt;
  
  &lt;/div&gt;
+
 
 &lt;p&gt;当页面宽度不足时，溢出内容支持横向滚动浏览。同样地，表格也支持交叉引用：&lt;span data-tab-ref="Maxwell关系"&gt;&lt;/span&gt;。&lt;/p&gt;
 &lt;h3 id="边注表格"&gt;边注表格&lt;/h3&gt;
 
-&lt;input id="marginpar-36" class="marginpar-ctrl" type="checkbox" aria-label="附加备注" aria-controls="the-marginpar-36" checked hidden&gt;
-&lt;div id="the-marginpar-36" class="marginpar abs" role="note"&gt;
-
- 
+ &lt;input id="marginpar-37" class="marginpar-ctrl" type="checkbox" aria-label="附加备注" aria-controls="the-marginpar-37" checked hidden&gt;
+ &lt;div id="the-marginpar-37" class="marginpar abs" role="note"&gt;
  &lt;div class="table-wrap" data-tab-label="inverse-square" id="tab-inverse-square"&gt;
  &lt;div class="table-center"&gt;
  &lt;table&gt;
@@ -445,14 +454,12 @@ $$&lt;/div&gt;
  
  &lt;p class="table-caption"&gt;
  
- 
  $x$ 从两侧逼近 $0$ 的过程中，$1/x^2$ 对应的函数值。
- &lt;/p&gt;
+&lt;/p&gt;
  
  &lt;/div&gt;
+ &lt;/div&gt;
 
-
-&lt;/div&gt;
 
 &lt;p&gt;边注栏同样支持表格与交叉引用，示例：&lt;span data-tab-ref="inverse-square"&gt;&lt;/span&gt;。边注表格适合承载信息量较小的内容。&lt;/p&gt;
 &lt;h2 id="代码块"&gt;代码块&lt;/h2&gt;
