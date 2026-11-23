@@ -74,6 +74,7 @@ User-agent: FriendlyCrawler
 User-agent: GPTBot
 User-agent: GeistHaus-PageFetcher
 User-agent: Gemini-Deep-Research
+User-agent: GeneralRetrievalBot
 User-agent: Google-Agent
 User-agent: Google-CloudVertexBot
 User-agent: Google-Extended
